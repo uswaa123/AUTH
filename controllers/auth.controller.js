@@ -30,6 +30,8 @@ const signUp = async (req, res) => {
         });
     }
 
+    
+
     try {
         // Check if user already exists
         const existingUser = await userRepository.findUserByEmail(email);
